@@ -28,7 +28,7 @@ My portfolio website showcases my work, skills, and achievements. Built with HTM
 
 To explore my portfolio, visit the live website:
 
-**[Link to Live Portfolio] = https://portflorix.netlify.app
+**[Link to Live Portfolio] = https://portflorix.netlify.app**
 
 ## Contributions
 
@@ -40,5 +40,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Author
 
-- **Niladri Chatterjee
+- **Niladri Chatterjee**
 
