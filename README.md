@@ -24,11 +24,6 @@ My portfolio website showcases my work, skills, and achievements. Built with HTM
 - External APIs
 - Font Awesome Icons
 
-## Getting Started
-
-To explore my portfolio, visit the live website:
-
-**[Link to Live Portfolio] = https://portflorix.netlify.app**
 
 ## Contributions
 
