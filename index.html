@@ -1,230 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- , user-scalable=no -->
 
 <head>
-    <link rel="shortcut icon" type="image/jpg" href="Image/man.ico">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YMWDE0VTD3');
+    </script>
+
+    <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niladri Chatterjee | Portfolio website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="theme-color" content="#000">
+    <meta name="description"
+        content="Niladri Chatterjee | Portfolio, Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions.">
+    <meta name="keywords"
+        content="niladri chatterjee, niladrichatterjee portfolio, Niladri Chatterjee Portfolio, niladrichatterjee, niladri chatterjee github, niladrichatterjee me, niladrichatterjee uiverse, uiverse, niladri chatterjee uiverse, niladri chatterjee frontend developer, frontend developer">
+    <meta name="author" content="Vinod Jangid">
+    <!-- <meta property="og:image" content="https://www.vinodjangid.me/src/webp/vinod%20(2).webp"> -->
+    <!--
+    <meta property="og:title" content="" >
+
+    <meta property="og:url" content="" >
+    <meta property="og:site_name" content="" >
+    <meta property="og:description" content="" >
+    <meta name="twitter:title" content="" >
+    <meta name="twitter:image" content="" >
+    <meta name="twitter:url" content="" >
+    <meta name="twitter:card" content="" > -->
+    <title>Niladri Chatterjee - Professional Web Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="src/jpg/profile-pic (3).png">
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps">
+    <!-- google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 
-<body>
-    <!-- header section starts -->
-    <header class="side-bar">
-        <div class="user">
-            <img src="Image/pic.png">
-            <h3 class="name">Niladri Chatterjee</h3>
-            <p class="post">Front end developer</p>
-        </div>
+<body class="body">
+    <audio loop="" id="audioPlayer" autoplay="" style="display:none">
+        <source src="src/mp3/preloader.mp3" type="audio/mp3">
+    </audio>
+    <div id="preloader"></div>
+    <noscript>Allow Javascript</noscript>
+
+    <header>
 
 
-        <nav class="navbar">
-            <ul id="navbar-menu">
-                <li><a href="#home"><i class="fa fa-home"> </i> Home </a></li>
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-                <li><a href="#portfolio"><i class="fa fa-chrome"></i> Portfolio </a></li>
-                <li><a href="#contact"><i class="fa fa-address-card-o"></i> Contact </a></li>
-            </ul>
+        <div class="navbar" id="navbar">
+            <div class="hey">Hey!</div>
+            <div class="logo" tabindex="0" aria-label="vinod jangid logo">
 
-            <div class="clock">
-                <div id="time"></div>
+                <div class="logo-top">
+                    <img src="src/png/logo-headwithouteyes.png" alt="animation-head">
+                    <div class="face">
+                        <div class="eye">
+                            <div class="pupil"></div>
+                        </div>
+                        <div class="eye">
+                            <div class="pupil"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo-bottom"><img src="src/png/logo-body.png" alt="animation-body"></div>
+
             </div>
-        </nav>
+            <div class="navbar-tabs" id="navbar-tabs">
+                <ul class="navbar-tabs-ul">
+                    <a href="#home" tabindex="0" aria-label="Home menu button">
+                        <li class="home activeThistab" class="navbar-tabs-li " data-aos="fade-down"
+                            data-aos-delay="100">&#60;/Home&#62;</li>
+                    </a>
+                    <a href="#about" aria-label="about menu button">
+                        <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+                            &#60;/AboutMe&#62;</li>
+                    </a>
+                    <a href="#skills" aria-label="skills menu button">
+                        <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+                            &#60;/Skills&#62;</li>
+                    </a>
+                    <a href="#projects" aria-label="projects menu button">
+                        <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+                            &#60;/Projects&#62;</li>
+                    </a>
 
+                </ul>
+
+
+            </div><!-- navbar tabs ends -->
+        </div>
     </header>
-    <!-- header section ends -->
+    <!-- header ends here -->
 
-    <div id="menu" class="fas fa-bars"></div>
+    <main>
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <h3>HI THERE !</h3>
-        <h1>I'm <span>Niladri Chatterjee</span></h1>
-        <h3>A <span class="typing">web desiger</span></h3>
-        <p>I'm a web Desiger & front-end developer focused on crafting clean & user-friendly experiences, I am
-            passionate about building excellent software that improves the lives of those around me.</p>
-        <a href="#about"><button class="btn">About me <i class="fas fa-user"></i></button></a>
-
-    </section>
-    <!-- home section end -->
-
-
-
-
-    <!-- about section start -->
-    <section class="about" id="about">
-        <h1 class="heading"><span>about</span> me</h1>
-        <div class="row">
-            <div class="info">
-                <h3><span>name : </span> niladri Chatterjee </h3>
-                <h3><span>age : </span> 21 </h3>
-                <h3><span>qualification : </span> B.Tech </h3>
-                <h3><span>post : </span> front end developer </h3>
-                <h3><span>language : </span> English & Bengali </h3>
-                <a href="Image/01_NILADRI CHATTERJEE_CV.pdf" download="NILADRI_CHATTERJEE_CV"><button
-                        class="btn">download CV <i class="fas fa-download"></i></button></a>
+        <!-- hamburger -->
+        <div class="hamburger" id="hamburger" data-aos="fade">
+            <div class="hamburgerbase">
+                <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+                    <span class="burger-bar" id="burger-bar1"></span>
+                    <span class="burger-bar" id="burger-bar2"></span>
+                    <span class="burger-bar" id="burger-bar3"></span></button>
             </div>
+        </div>
+        <!-- hamburger -->
+        <div class="mobiletogglemenu" id="mobiletogglemenu">
+            <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+                <a href="#home" tabindex="0" aria-label="Home menu button">
+                    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab"
+                        onclick="hidemenubyli()">&#60;/Home&#62;</li>
+                </a>
+                <a href="#about" tabindex="0" aria-label="about menu button">
+                    <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+                        &#60;/AboutMe&#62;</li>
+                </a>
+                <a href="#skills" tabindex="0" aria-label="skills menu button">
+                    <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+                        &#60;/Skills&#62;</li>
+                </a>
+                <a href="#projects" tabindex="0" aria-label="projects menu button">
+                    <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+                        &#60;/Projects&#62;</li>
+                </a>
 
-            <div class="counter">
-                <div class="box">
-                    <span>2+</span>
-                    <h3>years of experience</h3>
+            </ul>
+        </div>
+        <!-- mobile toggle menu ends -->
+        <div class="fakenavbar"></div>
+        <section class="landing-page-container" id="home">
+
+
+
+
+            <div class="text-content">
+                <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+                    <p class="jello">N</p>
+                    <p class="jello">a</p>
+                    <p class="jello">m</p>
+                    <p class="jello">a</p>
+                    <p class="jello">s</p>
+                    <p class="jello">t</p>
+                    <p class="jello">e</p>
+                    <p class="jello">(</p>
+                    <p class="jello">)</p>
+                    <p class="jello">;</p>&nbsp;<p class="jello">I</p>
+                    <p class="jello">'</p>
+                    <p class="jello">m</p>
+                </article>
+                <article id="name" data-aos="fade-up" data-aos-delay="200">
+                    <p class="jello">N</p>
+                    <p class="jello">i</p>
+                    <p class="jello">l</p>
+                    <p class="jello">a</p>
+                    <p class="jello">d</p>
+                    <p class="jello">r</p>
+                    <p class="jello">i</p>&nbsp;
+                    <p class="jello">C</p>
+                    <p class="jello">h</p>
+                    <p class="jello">a</p>
+                    <p class="jello">t</p>
+                    <p class="jello">t</p>
+                    <p class="jello">e</p>
+                    <p class="jello">r</p>
+                    <p class="jello">j</p>
+                    <p class="jello">e</p>
+                    <p class="jello">e</p>
+                    <p class="jello">.</p>
+                </article>
+
+
+                <article id="work" data-aos="fade-up" data-aos-delay="400">
+                    <div>
+                        <p class="jello">I</p>
+                    </div>
+                    <div>
+                        <p class="jello">d</p>
+                        <p class="jello">e</p>
+                        <p class="jello">s</p>
+                        <p class="jello">i</p>
+                        <p class="jello">g</p>
+                        <p class="jello">n</p>
+                    </div>
+                    <div>
+                        <p class="jello">&</p>
+                    </div>
+                    <div>
+                        <p class="jello">c</p>
+                        <p class="jello">o</p>
+                        <p class="jello">d</p>
+                        <p class="jello">e</p>
+                    </div>
+                    <div>
+                        <p class="jello">f</p>
+                        <p class="jello">o</p>
+                        <p class="jello">r</p>
+                    </div>
+                    <div>
+                        <p class="jello">w</p>
+                        <p class="jello">e</p>
+                        <p class="jello">b</p>
+                        <p class="jello">.</p>
+                    </div>
+                </article>
+                <p id="info-para" data-aos="fade-up" data-aos-delay="600">Web Developer with experience of Digital
+                    Concept Arts, Frontend Web Designs. I Love fun Web UI, collaboration and making products.<br>
+                    <br> I value simple content structure, clean design patterns, and thoughtful interactions.
+                </p>
+                <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+
+                    <a href="mailto:niladrichatterjee365@gmail.com" tabindex="-1">
+                        <button class="letsTalkBtn">
+                            <p class="letsTalkBtn-text">Let's Talk!</p>
+                            <span class="letsTalkBtn-BG"></span>
+                        </button></a>
+                    <div class="setting-container" id="setting-container">
+                        <input type="checkbox" id="switchforsetting" onclick="settingtoggle()">
+
+                        <label for="switchforsetting" id="labelforsetting" tabindex="0"
+                            aria-label="settings for sound and appearance"></label>
+
+                        <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+                            <input type="checkbox" id="switchforvisualmode" onclick="visualmode()">
+                            <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                                aria-label="switch appearance"></label>
+                        </div>
+
+                        <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+                            <input type="checkbox" id="switchforsound" onclick="playpause()">
+                            <label for="switchforsound" id="labelforsound" tabindex="0"
+                                aria-label="switch sound"></label>
+                        </div>
+                    </div><!-- setting div ends -->
+                </div><!-- contact-btn-div -->
+
+            </div>
+            <!-- Resume button -->
+            <button class="resume-btn" id="resume-btn" onclick="openURL()">
+
+                <div class="sign"><svg viewBox="0 0 640 512">
+                        <path
+                            d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+                    </svg></div>
+
+                <div class="text">Resume</div>
+            </button>
+        </section>
+        <!-- landing page ends here -->
+        <section class="about-section-container" id="about" data-aos="fade-up">
+            <div class="about-section">
+                <div class="section-heading">
+                    <article class="section-heading-article" tabindex="0" aria-label="About me heading">
+                        &#60;/AboutMe&#62;</article>
+                    <p class="sectionHeadingP"></p>
                 </div>
 
-                <div class="box">
-                    <span>5+</span>
-                    <h3>Project completed</h3>
+                <div class="info-dp-section">
+                    <div class="about-info">
+                        <p tabindex="0">Hi! My name is Niladri i'm a Web Developer and Digital Visual Artist, I love
+                            creating things that exists on the internet. My interest in web development started in 2021
+                            when i thought to upload my Digital Concept Arts Online.</p> <br>
+                        <p tabindex="0">Instead of making a online Concepts Art website, i started enjoying web
+                            development. Creating custom things for web taught me a lot about design & development! </p>
+                        <br>
+                        <p tabindex="0"> My main focus these days is building interesting & creative web designs, I like
+                            to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+
+                    </div>
+
+                    <div class="dp" data-aos="fade-up"><img src="src/webp/vinod (2).png" alt="Niladri Chatterjee"
+                            tabindex="0" aria-label="image of vinod"></div>
+                </div>
+            </div>
+        </section>
+        <!-- about section ends  -->
+
+        <section class="skills-section-container" id="skills">
+            <div class="skills-section">
+                <div class="section-heading" data-aos="fade-up">
+                    <article class="section-heading-article" tabindex="0" aria-label="skills heading">&#60;/Skills&#62;
+                    </article>
+                    <p class="sectionHeadingP"></p>
                 </div>
 
-                <div class="box">
-                    <span>10+</span>
-                    <h3>Happy clients</h3>
+                <div class="frontend-dev-section">
+
+                    <!-- ----------------------------------------------------------------------- -->
+
+                    <div class="other-languages frontend-dev-section">
+
+                        <div class="languages-heading frontend-dev-heading" data-aos="fade-up" tabindex="0"
+                            aria-label="as a programmer skills i have">Programming Languages</div>
+                        <div class="languages-i-know language-speak" data-aos="fade-up">
+                            <article>>_ Languages i Know:</article>
+                        </div>
+                        <div class="programming-section languages-section">
+
+                            <div class="language-name language-name" data-aos="fade-up" id="c">
+                                <article tabindex="0" aria-label="C a programming language">C</article>
+                            </div>
+                            <div class="language-name language-name" data-aos="fade-up" id="cpp">
+                                <article tabindex="0" aria-label="C plus plus a programming language">C++</article>
+                            </div>
+                            <div class="language-name language-name" data-aos="fade-up" id="cpp">
+                                <article tabindex="0" aria-label="Python a programming language">Python</article>
+                            </div>
+
+                            <div class="language-name language-name" data-aos="fade-up" id="cpp">
+                                <article tabindex="0" aria-label="JavaScript">JavaScript</article>
+                            </div>
+                        </div>
+
+                    </div><br><br><br><br>
+
+
+                    <!-- ------------------------------------------------------------------------ -->
+
+                    <div class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+                        aria-label="As a frontend a developer these are the skills i have">Frontend Developer</div>
+                    <div class="language-speak" data-aos="fade-up">
+                        <article tabindex="0" aria-label="languages i speak below">Development Scripts</article>
+                    </div>
+                    <div class="languages-section">
+
+                        <div class="language-name" data-aos="fade-up" id="html">
+                            <article tabindex="0" aria-label="HTML">HTML</article>
+                        </div>
+
+                        <div class="language-name" data-aos="fade-up" id="css">
+                            <article tabindex="0" aria-label="C S S">CSS</article>
+                        </div>
+
+                        <div class="language-name" data-aos="fade-up" id="bootstrap">
+                            <article tabindex="0" aria-label="bootstrap">Bootstrap</article>
+                        </div>
+                        <div class="language-name" data-aos="fade-up" id="react">
+                            <article tabindex="0" aria-label="React J S">Tailwind</article>
+                        </div>
+
+
+
+                    </div>
+
                 </div>
+                <div class="designing-section frontend-dev-section">
 
-                <div class="box">
-                    <span>2+</span>
-                    <h3>Awaeds won</h3>
+                    <div class="designing-heading frontend-dev-heading" data-aos="fade-up" tabindex="0"
+                        aria-label="as a designer these are the skills i have">Designer</div>
+                    <div class="enjoy-designing language-speak" data-aos="fade-up">
+                        <article>Things i enjoy Designing:</article>
+                    </div>
+                    <div class="tool-section languages-section">
+
+                        <div class="tool-name language-name" data-aos="fade-up" id="ap">
+                            <article tabindex="0" aria-label="Adobe Photoshop">ADOBE PHOTOSHOP</article>
+                        </div>
+                        <div class="tool-name language-name" data-aos="fade-up" id="canva">
+                            <article tabindex="0" aria-label="canva">CANVA</article>
+                        </div>
+                        <div class="tool-name language-name" data-aos="fade-up" id="ai">
+                            <article tabindex="0" aria-label="Adobe illustrator">ADOBE AI</article>
+                        </div>
+                        <div class="tool-name language-name" data-aos="fade-up" id="ai">
+                            <article tabindex="0" aria-label="Figma">FIGMA</article>
+                        </div>
+
+
+
+                    </div>
+
                 </div>
+                <div class="other-languages frontend-dev-section">
+
+                    <div class="languages-heading frontend-dev-heading" data-aos="fade-up" tabindex="0"
+                        aria-label="as a programmer skills i have">Database</div>
+                    <div class="languages-i-know language-speak" data-aos="fade-up">
+                        <article>Storing Data:</article>
+                    </div>
+                    <div class="programming-section languages-section">
+
+                        <div class="language-name language-name" data-aos="fade-up" id="c">
+                            <article tabindex="0" aria-label="mysql">MySQL</article>
+                        </div>
+                        <div class="language-name language-name" data-aos="fade-up" id="cpp">
+                            <article tabindex="0" aria-label="Excel">Excel</article>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- skills section ends -->
+        <section class="projects-section-container" id="projects">
+            <div class="projects-section-div">
+                <div class="section-heading">
+                    <article class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+                        &#60;/Projects&#62;</article>
+                    <p class="sectionHeadingP"></p>
+                </div>
+                <div class="project-boxes-div">
+
+                    <a href="https://socialboak.netlify.app/" target="_blank">
+                        <div class="project-box project-box1" id="project-box1">
+                            <div class="info-div">
+                                <img src="src/webp/Facebook_Logo.webp" alt="" class="faviconforProject">
+                                <article class="ProjectHeading">Facebook Clone</article>
+                                <p class="ProjectDescription">A Facebook Clone is a web app replicating Facebook's look and features. Built with HTML, CSS, and JavaScript, it lets users interact and share content.</p>
+                                <button class="cta">
+                                    <span>See Live Website</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="image-div"><img src="src/webp/Facebook-project.webp" alt=""></div>
+                        </div>
+                    </a>
+                    <!-- ---------------------- -->
+                    <a href="https://cuppa-restaurant.netlify.app/" target="_blank">
+                        <div class="project-box project-box2" id="project-box2">
+                            <div class="info-div">
+                                <img src="src/webp/cup-logo.webp" alt="" class="faviconforProjectAquaregia">
+                                <article class="ProjectHeading">Restaurant Website</article>
+                                <p class="ProjectDescription">This website showcases our delicious menu and offers a glimpse of our culinary expertise.</p>
+                                <button class="cta">
+                                    <span>See Live Website</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="image-div"><img src="src/webp/FoodMenuProject.webp"></div>
+                        </div>
+                    </a>
+
+                    <!-- ---------------------- -->
+                    <a href="https://digital-portfolio-js.netlify.app/" target="_blank">
+                        <div class="project-box project-box3" id="project-box3">
+                            <div class="info-div">
+                                <img src="src/png/logoofweb.png" alt="" class="faviconforProject">
+                                <article class="ProjectHeading">React Portfolio</article>
+                                <p class="ProjectDescription">This is a portfolio for personal information that you can share with the world.</p>
+                                <button class="cta">
+                                    <span>See Live Website</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="image-div"><img src="src/webp/YouTube-project.webp" alt=""></div>
+                        </div>
+                    </a>
+
+                    <!-- ---------------------- -->
+                    <a href="https://travelling-town.netlify.app/" target="_blank">
+                        <div class="project-box project-box4" id="project-box4">
+                            <div class="info-div">
+                                <img src="src/webp/Travel-logo.webp" alt="" class="faviconforProjectAquaregia">
+                                <article class="ProjectHeading">Travel Explorer</article>
+                                <p class="ProjectDescription">A website that takes you on a virtual journey to explore breathtaking destinations around the world.</p>
+                                <button class="cta">
+                                    <span>See Live Website</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="image-div"><img src="src/webp/Traveling-projects.webp" alt=""></div>
+                        </div>
+                    </a>
+
+                    <!-- ---------------------- -->
+                    <a href="https://proedit.netlify.app/" target="_blank">
+                        <div class="project-box project-box5" id="project-box5">
+                            <div class="info-div">
+                                <img src="src/ico/foodmenufavicon.ico" alt="" class="faviconforProjectAquaregia">
+                                <article class="ProjectHeading">Image Editing Website</article>
+                                <p class="ProjectDescription">It provides a user-friendly interface that enables users to customize their images to their preferences.</p>
+                                <button class="cta">
+                                    <span>See Live Website</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="image-div"><img src="src/webp/Img-editing.webp" alt=""></div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- main ends here -->
+
+    <footer>
+
+        <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+            <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+        </button>
+        <div class="footercontainer">
+            <div class="two-words">
+                <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">"Learning, Living, and
+                    Leveling Up."</article>
+            </div>
+            <div class="social-media-container">
+                <div class="getintouch-heading">
+                    <article>GetinTouch();</article>
+                </div>
+                <div class="logos">
+                    <a href="https://www.linkedin.com/in/niladri1" target="_blank"
+                        aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg></a>
 
 
+                    <a href="https://github.com/niladri-1" target="_blank" aria-label="My github"><svg
+                            viewBox="0 0 496 512" class="SocialHandle">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg></a>
+
+
+                    <a href="mailto:niladrichatterjee365@gmail.com" target="_blank" aria-label="My G mail"><svg
+                            id="GmailLogo" viewBox="0 0 512 512">
+                            <path
+                                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <article>Design & Built by Niladri Chatterjee <i class="far fa-copyright"></i> 2024</article>
             </div>
         </div>
 
-    </section>
-    <!-- about section end -->
-
-
-
-    <!-- education section starts -->
-    <section class="education" id="education">
-        <h1 class="heading">my <span>education</span> </h1>
-
-        <div class="box-containe">
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2017 - 18</span>
-                <h3>Secondary Completed.</h3>
-                <h2>Kharar Sri Aurobindo Vidyamandir, Kharar, West Bengal.</h2>
-                <p>Kharar Sri Aurobindo Vidyamandir, is one of the oldest school, in the village Kharar of
-                    sub-division
-                    Ghatal, Paschim Medinipur, West Bengal, India.</p>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2019 - 20</span>
-                <h3>Higher Secondary Completed.</h3>
-                <h2>Birsingha Bhagabati Vidyalaya (H.S), Birsingha, West Bengal.</h2>
-                <p>Birsingha Bhagabati Vidyalaya is one of the oldest schools in the village Birsingha of sub-division
-                    Ghatal, Paschim Medinipur, West Bengal India.</p>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2020 - 24</span>
-                <h3>B.Tech</h3>
-                <h2>Bengal College of Engineering and Technology, Durgapur, West Bengal.</h2>
-                <p>BCET, Durgapur is a self-financing college located in West Bengal, India providing under-graduate as
-                    well as post-graduate courses in engineering and technology disciplines.</p>
-            </div>
-        </div>
-    </section>
-    <!-- education section ends -->
-
-
-
-
-    <!-- Portfolio section starts -->
-    <section class="portfolio" id="portfolio">
-        <h1 class="heading">my <span>Portfolio</span> </h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="Image/img1.jpg">
-            </div>
-
-            <div class="box">
-                <img src="Image/img2.jpg">
-            </div>
-
-            <div class="box">
-                <img src="Image/img3.jpg">
-            </div>
-
-            <div class="box">
-                <img src="Image/img4.jpg">
-            </div>
-
-            <div class="box">
-                <img src="Image/img5.jpg">
-            </div>
-
-            <div class="box">
-                <img src="Image/img6.jpg">
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio section end -->
-
-
-    <!-- contact section starts -->
-    <section class="contact" id="contact">
-        <h1 class="heading"> <span>contact</span> me </h1>
-        <div class="row">
-            <div class="content">
-                <h3 class="title">contact info</h3>
-
-                <div class="info">
-                    <h3><i class="fas fa-envelope"></i> <a href="mailto: niladrichatterje365@gmail.com"
-                            target="_blank">Mail us</a> </h3>
-                    <h3><i class="fas fa-phone"></i><a href="tel:+916296554939">Call us</a> </h3>
-                    <h3><i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/niladri1"
-                            target="_blank">LinkedIn</a></h3>
-                    <h3><i class="fa-brands fa-hackerrank"></i> <a href="https://www.hackerrank.com/bugstar102"
-                            target="_blank">HackerRank</a></h3>
-                    <h3><i class="fa-brands fa-github"></i></i> <a href="https://github.com/niladri-1"
-                            target="_blank">GitHub</a></h3>
-                </div>
-
-                <!-- </div> -->
-            </div>
-
-            <form method="post" autocomplete="on" name="google-sheet">
-                <input type="text" placeholder="name" class="box" name="Name">
-                <input type="email" placeholder="email" class="box" name="Email" id="myemail" autocomplete="email">
-                <input type="number" placeholder="number" class="box" name="Number" id="number" autocomplete="cc-number"
-                    maxlength="10">
-                <textarea id="" cols="30" rows="10" class="box message" placeholder="message" name="Message"></textarea>
-                <center><button type="submit" class="btn" id="send">send <i class="fas fa-paper-plane"></i></button>
-                </center>
-            </form>
-    </section>
-    <!-- contact section ends -->
-
-
-    <!-- scroll up button -->
-    <a href="#home" class="top">
-        <img src="Image/scroll-top-img.png">
-    </a>
-
-    <div class="copyright">
-        <p>Copyright © Snehadeep <span>❤</span> by Try Hack With Me</p>
-    </div>
-
-    <!-- <<================= Js File =================>> -->
-
-    <!-- jquery cdn link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-    <!-- custom js file link -->
-    <script src="script.js"></script>
+    </footer>
+    <!-- footer ends here -->
 
 </body>
+
+<script src="main.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+    function openURL() {
+        var url = "src/pdf/Niladri_Chatterjee(CV).pdf";
+
+        window.open(url, '_blank');
+    }
+</script>
 
 </html>
